@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="md_bottom_sheet_title_color">#242424</color>
+    <color name="md_bottom_sheet_text_color">#7E7D7D</color>
+    <color name="grayTextColor">#5A5A5A</color>
+</resources>
