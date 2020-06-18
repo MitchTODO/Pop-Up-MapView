@@ -1,38 +1,23 @@
 package com.example.googlemapexample;
 
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-import static androidx.fragment.app.DialogFragment.STYLE_NO_INPUT;
-
 public class MapsActivity extends FragmentActivity {
-
-    //private GoogleMap mMap;
-    private Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
-        mButton = findViewById(R.id.mapButton);
-        final AddPhotoBottomDialog addPhotoBottomDialogFragment = AddPhotoBottomDialog.newInstance();
+        setContentView(R.layout.main_activity);
+        Button mButton = findViewById(R.id.mapButton);
+        final BottomSheetDialogFragment addPhotoBottomDialogFragment = BottomSheetDialogFragment.newInstance();
 
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 addPhotoBottomDialogFragment.show(getSupportFragmentManager(), "add_photo_dialog_fragment");
             }
         });
