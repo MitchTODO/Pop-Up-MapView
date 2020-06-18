@@ -35,7 +35,7 @@ Setup is very straight forward and well documentation by google.
 
            <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">google_maps_key</string>
 
-4. Run the project in Android Studios
+4. Run the project
 
 
 ## Code Run Down
